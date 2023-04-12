@@ -1,3 +1,15 @@
 /* 
     Theme Name: Block Theme
 */
+
+.headline--large{
+    font-size: 3rem;
+}
+
+.headline--medium{
+    font-size: 2.2rem;
+}
+
+.headline--small{
+    font-size: 1.5rem;
+}
