@@ -8,3 +8,13 @@ function bannerBlock() {
 }
 
 add_action('init', 'bannerBlock');
+
+
+function headingBlock() {
+    wp_register_script('headingBlockScript', get_stylesheet_directory_uri() . '/build/heading.js', array('wp-blocks', 'wp-editor'));
+    register_block_type("block-theme/heading", array(
+      'editor_script' => 'headingBlockScript'
+    ));
+  }
+  
+  add_action('init', 'headingBlock');

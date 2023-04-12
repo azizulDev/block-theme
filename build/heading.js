@@ -93,9 +93,9 @@ module.exports = window["wp"]["element"];
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-/*!******************************!*\
-  !*** ./our-blocks/banner.js ***!
-  \******************************/
+/*!*******************************!*\
+  !*** ./our-blocks/heading.js ***!
+  \*******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -103,33 +103,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 
 
-wp.blocks.registerBlockType("block-theme/banner", {
-  title: "Banner",
+wp.blocks.registerBlockType("block-theme/heading", {
+  title: "Heading",
   edit: EditComponent,
   save: SaveComponent
 });
 function EditComponent() {
-  const useMeLater = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, "Banner Title"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Lorem ipsum banner description"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", null, "Go Button")));
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "page-banner",
-    style: {
-      backgroundColor: '#ddd',
-      padding: '50px 10px'
-    }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
-    allowedBlocks: ["block-theme/heading"]
-  }));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "This is a heading");
 }
 function SaveComponent() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "page-banner",
-    style: {
-      backgroundColor: '#ddd',
-      padding: '50px 10px'
-    }
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, "Heading block output");
 }
 }();
 /******/ })()
 ;
-//# sourceMappingURL=banner.js.map
+//# sourceMappingURL=heading.js.map
